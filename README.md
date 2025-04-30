@@ -5,7 +5,7 @@ El dataset usado proviene de la plataforma Chatgpt al generar reportes de ventas
 Se tiene el dataset ventas_mensuales.csv el cual contiene dos columnas, Ventas y Time. De las dos columnas solo se extrae la columna Ventas y tomando en cuenta el tiempo de los datos colocamos las fechas de inicio y fin de la columna Time en la serie de tiempo ventas_mensual.ts.
 
 2. OBJETIVOS
-En este trabajo se busca realizar la predicción de las ventas de los próximos doce meses teniendo en cuenta la data desde el 2010. Con esto se podría tener una cantidad base de producción de prendas y también un pronóstico de las ventas futuras. Se usará el mejor modelo de serie temporal de acuerdo con las particularidades de la serie temporal.
+Se busca predecir las ventas de ropas de los próximos doce meses. Se buscará el mejor modelo de serie temporal de acuerdo con las particularidades de esta.
 
 3. CONCLUSIONES
 Se concluye que un modelo óptimo para este caso de venta de ropas sería un SARIMA con parámetros (2,1,1)(0,0,1). Internamente se usó el logaritmo para estabilizar las varianzas y así obtener un modelo óptimo. La predicción contempla orden 1 de las medias móviles estacionales, es decir, el modelo ajustó los errores pasados en lugar de errores propios pasados. Las ventas de los próximos meses corresponden al rango de la variabilidad de varianza de los valores anteriores. 
